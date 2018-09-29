@@ -5,18 +5,18 @@ import imgfrente from "../../img/trebol.png"
 import imgComun from "../../img/carta-posterior.png"
 
 class CartaTrebol extends Component {
-  state = {
-    visible: false,
+  click= (event)=>{
+    this.props.toggle(this.props.index)
   }
   render() {
     let img;
-    if (this.state.visible) {
+    if (this.props.visible) {
       img = imgfrente
     } else { img = imgComun }
 
     return (
       <div className="carta col-3">
-        <img className="carta-trebol" src={img} img alt="carta trébol" />
+        <img className="carta-trebol" src={img} onClick={this.click} img alt="carta trébol" />
       </div>
     )
   }
