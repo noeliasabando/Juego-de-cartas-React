@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./CartaDiamante.css";
 
-import imgfrente from "../../img/trebol.png"
+import imgfrente from "../../img/diamante.png"
 import imgComun from "../../img/carta-posterior.png"
 
 class CartaDiamante extends Component {
@@ -14,9 +14,16 @@ class CartaDiamante extends Component {
       img = imgfrente
     } else { img = imgComun }
 
+    let classhidden;
+    if(this.props.hidden===true){
+      classhidden= "carta-diamante hidden"
+    }else{
+      classhidden= "carta-diamante"
+    }
+
     return (
       <div className="carta col-3">
-        <img className="carta-diamante" src={img} onClick={this.click} img alt="carta diamante" />
+        <img className={classhidden} src={img} onClick={this.click} img alt="carta diamante" />
       </div>
     )
   }

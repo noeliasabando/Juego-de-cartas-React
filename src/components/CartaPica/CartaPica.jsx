@@ -14,9 +14,16 @@ class CartaPica extends Component {
       img = imgfrente
     } else { img = imgComun }
 
+    let classhidden;
+    if(this.props.hidden===true){
+      classhidden= "carta-pica hidden"
+    }else{
+      classhidden= "carta-pica"
+    }
+
     return (
       <div className="carta col-3">
-        <img className="carta-pica" src={img} onClick={this.click} img alt="carta pica" />
+        <img className={classhidden} src={img} onClick={this.click} img alt="carta pica" />
       </div>
     )
   }

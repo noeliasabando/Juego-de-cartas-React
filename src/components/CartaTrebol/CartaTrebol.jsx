@@ -14,9 +14,16 @@ class CartaTrebol extends Component {
       img = imgfrente
     } else { img = imgComun }
 
+    let classhidden;
+    if(this.props.hidden===true){
+      classhidden= "carta-trebol hidden"
+    }else{
+      classhidden= "carta-trebol"
+    }
+
     return (
       <div className="carta col-3">
-        <img className="carta-trebol" src={img} onClick={this.click} img alt="carta trébol" />
+        <img className={classhidden} src={img} onClick={this.click} img alt="carta trébol" />
       </div>
     )
   }
