@@ -8,7 +8,7 @@ class Inicio extends Component{
      <div className="container">
        <div className="row">
          <div className="col-12 col-md-12 text-center">
-          <h1 className="titulo">Bienvenido  que se yo</h1>
+          <h1 className="titulo">Bienvenido a mi juego</h1>
           <Link className="nav-link entrar" to="/tablero" >Jugar</Link>
          </div>
        </div>

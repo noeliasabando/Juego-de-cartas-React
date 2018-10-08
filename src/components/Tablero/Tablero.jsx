@@ -44,7 +44,7 @@ class Tablero extends Component {
     let carta1=null
     let carta2=null
 
-    let cartas=this.state.cartas /* lo q esta en state lo guardo en variable */
+    let cartas=this.state.cartas /* lo q esta en state lo guardo en variable para no poneer todo el rato this.state.cartas*/
 
     cartas.forEach((carta, index) => {
       if(carta.visible=== true){
