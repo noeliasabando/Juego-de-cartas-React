@@ -110,8 +110,8 @@ class Tablero extends Component {
         <div>
           <div className="container tablero">
             <div className="row">
-              <h1>Felicidades</h1>
-              <Link className="nav-link entrar" to="/" >Volver jugar</Link>
+              <h1 className="col-12 text-center">Felicidades</h1>
+              <Link className="nav-link entrar col-12 text-center" to="/" >Volver jugar</Link>
             </div>
           </div>
         </div>
